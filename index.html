@@ -15,6 +15,7 @@
         background-color: #E1D0D0;
         cursor: url(teaccher-pointer-30.png), auto;
         font-family: "chalk", sans-serif;
+/*         background-image: url(https://web.archive.org/web/20090726055353im_/http://www.geocities.com/beaucagegirl/sparkles.gif) */
       }
 
       @font-face {
@@ -40,12 +41,17 @@
 
       div {
         background-color: white;
-        height: 4px;
-        width: 15px;
+        height: .5vh;
+        width: 2vw;
         position: relative;
         bottom: 96px;
-        left: 240px
+        left: 25vw
           /* .red (this is a class, it can be used with the class atribute (under the actual html) in order to make unique poroperties to divs) */
+      }
+      .spongebob{
+        position: absolute;
+        left: 150px;
+        top: 350px
       }
     </style>
   </head>
@@ -54,10 +60,9 @@
       Welcome to my<br>
       Homepage
     </h1>
-
-    <div>
-
-    </div>
+      <div> </div>
+	<img class= spongebob src="spongebob.gif" alt="spongebob wiggling his arms">
+  
 
   </body>
 </html>
