@@ -11,11 +11,11 @@
       body {
         margin: 0;
         height: 100vh;
-/*         background-image: url(desks.png); */
+        /*         background-image: url(desks.png); */
         background-color: #E1D0D0;
         cursor: url(teaccher-pointer-30.png), auto;
         font-family: "chalk", sans-serif;
-/*         background-image: url(https://web.archive.org/web/20090726055353im_/http://www.geocities.com/beaucagegirl/sparkles.gif) */
+        /*         background-image: url(https://web.archive.org/web/20090726055353im_/http://www.geocities.com/beaucagegirl/sparkles.gif) */
       }
 
       @font-face {
@@ -34,8 +34,8 @@
         /* vw makes page responsive and more dynamic-(#)% of page no matter what*/
         padding: 20px;
         margin: 80px auto;
-        
-        
+
+
 
       }
 
@@ -48,32 +48,38 @@
         left: 25vw
           /* .red (this is a class, it can be used with the class atribute (under the actual html) in order to make unique poroperties to divs) */
       }
-      .clickable-div:active{
+
+      .clickable-div:active {
         animation-name: shake;
-        animation-duration: .1s;
+        animation-duration: .3s;
       }
-      
-      @keyframes shake{
+
+      @keyframes shake {
         0% {
-         transform: rotate(25deg)
-        }
-        20%{
-          transform: rotate(-25deg)
-        }
-        40%{
-           transform: rotate(25deg)
-        }
-        60%{
-          transform: rotate(-25deg)
-        80%{
           transform: rotate(25deg)
         }
+
+        20% {
+          transform: rotate(-25deg)
         }
+
+        40% {
+          transform: rotate(25deg)
+        }
+
+        60% {
+          transform: rotate(-25deg) }
+            80% {
+            transform: rotate(25deg)
+          }
+        }
+
         100% {
           transform: rotate(0deg)
         }
-      }
-      .spongebob{
+  
+
+      .spongebob {
         position: relative;
         left: 15vw;
         top: 5vw;
@@ -82,8 +88,6 @@
         border: 1vw solid #BF977B;
         padding: 1vw
       }
-      
-      
     </style>
   </head>
   <body>
@@ -91,9 +95,9 @@
       Welcome to my<br>
       Homepage
     </h1>
-     <div class="clickable-div"></div>
-	<img class="spongebob" src="spongebob.gif" alt="spongebob wiggling his arms">
-  
+    <div class="clickable-div"></div>
+    <img class="spongebob" src="spongebob.gif" alt="spongebob wiggling his arms">
+
 
   </body>
 </html>
