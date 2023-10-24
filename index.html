@@ -49,7 +49,18 @@
           /* .red (this is a class, it can be used with the class atribute (under the actual html) in order to make unique poroperties to divs) */
       }
       div:hover{
-        transform: rotate(25deg);
+        animation-name: shake;
+        animation-duration: .5s;
+      }
+      
+      @keyframes shake{
+        0% {
+         transform: rotate(25deg)
+        }
+        
+        100% {
+          transform: rotate(-25deg)
+        }
       }
       .spongebob{
         position: relative;
