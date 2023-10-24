@@ -50,14 +50,19 @@
       }
       div:hover{
         animation-name: shake;
-        animation-duration: .5s;
+        animation-duration: 1s;
       }
       
       @keyframes shake{
         0% {
          transform: rotate(25deg)
         }
-        
+        25%{
+          transform: rotate(-25deg)
+        }
+        50{
+           transform: rotate(25deg)
+        }
         100% {
           transform: rotate(-25deg)
         }
