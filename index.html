@@ -4,8 +4,19 @@
     <meta charset="utf-8">
     <title>Untitled</title>
     <style>
+      *{
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        background-image: url(desks.png);
+        cursor: url(teacher-pointer.png), auto;
+        font-family: "chalk", sans-serif;
+      }
+      
       @font-face {
-        src: url(Margarine-Regular.ttf);
+        src: url(Schoolbell-Regular.ttf);
         font-family: "chalk"
       }
 
@@ -13,27 +24,33 @@
         color: white;
         font-size: 50px;
         text-align: center;
-        border: solid #BF977B;
-        border-width: 10px;
+        border: 12px solid #BF977B;
         background-color: #4A6956;
         height: 200px;
-        margin-top: 50px
+        width: 50vw;
+        /* vw makes page responsive and more dynamic-
+        (#)% of page no matter what*/ 
+        margin: 75px auto;
+        padding: 20px;
+        
+      
+      
       }
-
+     
       body {
-        ;
-        height: 100vh;
-        background-image: url(desks.png);
-        cursor: url(teacher-pointer.png), auto;
-        font-family: "chalk", sans-serif;
+       
 
       }
     </style>
   </head>
   <body>
     <h1>
-      Welcome to my Home
+      Welcome to my Homepage
     </h1>
+  
+    <div>
+    
+    </div>
 
   </body>
 </html>
