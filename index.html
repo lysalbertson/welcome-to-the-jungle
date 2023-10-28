@@ -11,11 +11,9 @@
       body {
         margin: 0;
         height: 100vh;
-        /*         background-image: url(desks.png); */
         background-color: #E1D0D0;
         cursor: url(teaccher-pointer-30.png), auto;
         font-family: "chalk", sans-serif;
-        /*         background-image: url(https://web.archive.org/web/20090726055353im_/http://www.geocities.com/beaucagegirl/sparkles.gif) */
       }
 
       @font-face {
@@ -31,12 +29,8 @@
         background-color: #4A6956;
         height: 24vw;
         width: 70vw;
-        /* vw makes page responsive and more dynamic-(#)% of page no matter what*/
         padding: 20px;
         margin: 80px auto;
-
-
-
       }
 
       .clickable-div {
@@ -46,7 +40,6 @@
         position: relative;
         bottom: 96px;
         left: 25vw
-          /* .red (this is a class, it can be used with the class atribute (under the actual html) in order to make unique poroperties to divs) */
       }
 
       .clickable-div:active {
@@ -55,30 +48,12 @@
       }
 
       @keyframes shake {
-        0% {
-          transform: rotate(25deg)
-        }
-
-        20% {
-          transform: rotate(-25deg)
-        }
-
-        40% {
-          transform: rotate(25deg)
-        }
-
-        60% {
-          transform: rotate(-25deg)
-        }
-
-        80% {
-          transform: rotate(25deg)
-        }
-
-        100% {
-          transform: rotate(0deg)
-        }
-
+        0% {transform: rotate(25deg)}
+        20% {transform: rotate(-25deg)}
+        40% {transform: rotate(25deg)}
+        60% {transform: rotate(-25deg)}
+        80% {transform: rotate(25deg)}
+        100% {transform: rotate(0deg)}
       }
 
       .shelf {
@@ -89,20 +64,27 @@
       .box {
         max-width: 100%;
         position: relative;
-        /*         left: 15vw;
-        top: 5vw; */
+        text-align: center;
         width: 18vw;
         height: 18vw;
         border: 1.5vw solid #BF977B;
-        ;
-        
       }
-      .thing {
+
+      .justin {
         width: 15vw;
         margin-top: 6vw;
-          
-       
-          
+      }
+      .spongebob {
+        width: 15vw;
+      }
+      .bratz {
+        width: 10vw;
+        height: 15vw;
+      }
+      .daisy {
+        width: 10vw;
+        height: 15vw;
+        margin-top: .5vw;
       }
     </style>
   </head>
@@ -114,22 +96,23 @@
     <div class="clickable-div"></div>
 
     <div class="shelf">
-      <div class="box">
       
-        
-        <img class="thing"  src="spongebob.gif" alt="spongebob wiggling his arms">
-      </div>
-     
       <div class="box">
-         
-      <img class="thing" src="bratz.gif" alt="a gif of a Bratz doll">
+        <img class="spongebob" src="spongebob.gif" alt="spongebob wiggling his arms">
       </div>
-       <div class="box">
-      <img class="thing" src="daisy.gif" alt="Princess Daisy from the Mario franchise"> 
+      
+      <div class="box">
+        <img class="bratz" src="bratz.gif" alt="a gif of a Bratz doll">
       </div>
-        <div class="box">
-      <img class="thing" src="justin-biebs-large.png"  alt="a frame of justin Bieber in the music video for the song 'Baby'">
+      
+      <div class="box">  
+        <img class="daisy" src="daisy.gif" alt="Princess Daisy from the Mario franchise">
       </div>
+      
+      <div class="box">
+        <img class="justin" src="justin-biebs-large.png" alt="a frame of justin Bieber in the music video for the song 'Baby'">
+      </div>
+      
     </div>
 
   </body>
