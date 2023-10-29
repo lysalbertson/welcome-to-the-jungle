@@ -21,7 +21,15 @@
         font-family: "chalk"
       }
 
-
+      .floor{
+        background-image: url("carpet.jpg");
+        height: 25vh;
+        width: 100vw;
+        position: relative;
+        top: -14.5vh;
+        z-index:0 
+        
+      }
       .chalkboard {
         color: white;
         font-size: 6vw;
@@ -98,7 +106,7 @@
         height: 25vh;
         position: relative;
         left: 25vw;
-        top: -35;
+        top: -60;
 
       }
 
@@ -106,7 +114,8 @@
         display: flex;
         justify-content: center;
         position: relative;
-        bottom: 95
+        bottom: 95;
+        z-index: 2
       }
 
       .box {
@@ -116,7 +125,7 @@
         width: 18vw;
         height: 18vw;
         border: 1.5vw solid #BF977B;
-        border-top-width: 
+       
       }
       .left-box {
         max-width: 100%;
@@ -230,6 +239,6 @@
       </div>
 
     </div>
-
+<div class="floor"></div>
   </body>
 </html>
