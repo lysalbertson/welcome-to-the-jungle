@@ -21,7 +21,7 @@
         font-family: "chalk"
       }
 
-      h1 {
+      .chalkboard {
         color: white;
         font-size: 6vw;
         text-align: center;
@@ -55,10 +55,17 @@
         80% {transform: rotate(25deg)}
         100% {transform: rotate(0deg)}
       }
-
+      .boombox{
+        width: 25vw;
+      position: relative;
+        left: 60vw;
+        top:-70
+      }
       .shelf {
         display: flex;
         justify-content: center;
+        position: relative;
+        bottom: 100
       }
 
       .box {
@@ -70,9 +77,9 @@
         border: 1.5vw solid #BF977B;
       }
 
-      .pitch-perf {
+      .frame {
         width: 15vw;
-        margin-top: 6vw;
+        margin-top: 5.5vw;
       }
       .spongebob {
         width: 15vw;
@@ -90,12 +97,12 @@
     </style>
   </head>
   <body>
-    <h1>
+    <h1 class="chalkboard">
       Welcome to my<br>
       Homepage
     </h1>
     <div class="clickable-div"></div>
-
+<img class= "boombox" src="boombox.gif" alt="boombox">
     <div class="shelf">
       
       <div class="box">
@@ -111,7 +118,7 @@
       </div>
       
       <div class="box">
-        <img class="pitch-perf" src="pitch-perfect.png" alt="a frame of the Barden Bellas from the 2012 movie 'Pitch Perfect'">
+        <img class="frame" src="pitch-perfect.png" alt="a frame of the Barden Bellas from the 2012 movie 'Pitch Perfect'">
       </div>
       
     </div>
