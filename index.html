@@ -23,7 +23,7 @@
 
       .floor {
         background-image: url("carpet.jpg");
-        height: 100vh;
+        height: 200vh;
         width: 100vw;
         position: relative;
         top: -14vh;
@@ -42,6 +42,8 @@
         width: 70vw;
         padding: 20px;
         margin: 80px auto;
+        display: flex;
+        justify-content: center;
       }
 
       .clickable-div {
@@ -88,25 +90,27 @@
       .hangman {
         width: 12vw;
         height: 12vw;
+        top: 5vh;
+        max-width: 100%;
         position: relative;
-        bottom: 280px;
-        left: 9vw;
+        z-index: 50;
       }
 
       .sun {
         width: 12vw;
         height: 12vw;
         position: relative;
-        bottom: 325px;
-        left: 69vw;
+        max-width: 100%;
+        top: 3vh;
+      
       }
 
       .boombox {
         width: 25vw;
         height: 25vh;
         position: relative;
-        
         top: -60px;
+        left: 30vw
       }
 
       .shelf {
@@ -216,18 +220,22 @@
         height: 15vw;
         width: 16vw;
         position: relative;
-        bottom: 90px
+        bottom: 90px;
+        left: 25vw;
       }
     </style>
   </head>
   <body>
+    
     <h1 class="chalkboard">
+    <img class="hangman" src="hangman.png" alt="chalk version of the game hangman">
       Welcome to my<br>
       Homepage
+       <img class="sun" src="chalk-sun.png" alt="chalk sun">
     </h1>
     <div class="clickable-div"></div>
-    <img class="sun" src="chalk-sun.png" alt="chalk sun">
-    <img class="hangman" src="hangman.png" alt="chalk version of the game hangman">
+   
+  
     <img class="cup" src="cup.png" alt="mustache cup with pens in it">
     
     <a href="https://www.pandora.com/genre/2013-hits" target="_blank">
@@ -283,8 +291,9 @@
     </div>
    
     <div class="floor">
-      <a href="https://www.youtube.com/watch?v=DzrFh4LgUIA" target="_blank"></a>
+      <a href="https://www.youtube.com/watch?v=DzrFh4LgUIA" target="_blank">
     <img class="rug" src="class-rug.jpg" alt="class room rug with alphabet on it">
+        </a>
     </div>
      
   </body>
