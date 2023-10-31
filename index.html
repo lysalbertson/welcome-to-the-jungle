@@ -7,6 +7,7 @@
       * {
         box-sizing: border-box;
       }
+
       body {
         margin: 0;
         height: 100vh;
@@ -14,21 +15,22 @@
         cursor: url(teaccher-pointer-30.png), auto;
         font-family: "chalk", sans-serif;
       }
+
       @font-face {
         src: url(Schoolbell-Regular.ttf);
         font-family: "chalk"
       }
-    
-      .floor{
+
+      .floor {
         background-image: url("carpet.jpg");
         height: 25vh;
         height: 105vh;
         width: 100vw;
         position: relative;
         top: -14.5vh;
-        z-index:0 
-        
+        z-index: 0
       }
+
       .chalkboard {
         color: white;
         font-size: 6vw;
@@ -40,6 +42,7 @@
         padding: 20px;
         margin: 80px auto;
       }
+
       .clickable-div {
         background-color: white;
         height: .7vh;
@@ -47,31 +50,40 @@
         position: relative;
         bottom: 96px;
         left: 25vw;
+        z-index: 3
       }
+
       .clickable-div:active {
         animation-name: shake;
         animation-duration: .3s;
       }
+
       @keyframes shake {
         0% {
           transform: rotate(25deg)
         }
+
         20% {
           transform: rotate(-25deg)
         }
+
         40% {
           transform: rotate(25deg)
         }
+
         60% {
           transform: rotate(-25deg)
         }
+
         80% {
           transform: rotate(25deg)
         }
+
         100% {
           transform: rotate(0deg)
         }
       }
+
       .hangman {
         width: 12vw;
         height: 12vw;
@@ -79,6 +91,7 @@
         bottom: 280px;
         left: 9vw;
       }
+
       .sun {
         width: 12vw;
         height: 12vw;
@@ -86,6 +99,7 @@
         bottom: 325px;
         left: 69vw;
       }
+
       .boombox {
         width: 25vw;
         height: 25vh;
@@ -93,6 +107,7 @@
         left: 15vw;
         top: -60px;
       }
+
       .shelf {
         display: flex;
         justify-content: center;
@@ -100,6 +115,7 @@
         bottom: 95px;
         z-index: 2
       }
+
       .box {
         max-width: 100%;
         position: relative;
@@ -107,8 +123,9 @@
         width: 18vw;
         height: 18vw;
         border: 1.5vw solid #BF977B;
-       
+
       }
+
       .left-box {
         max-width: 100%;
         position: relative;
@@ -118,6 +135,7 @@
         border: 1.5vw solid #BF977B;
         border-left-width: 3vw
       }
+
       .right-box {
         max-width: 100%;
         position: relative;
@@ -127,58 +145,63 @@
         border: 1.5vw solid #BF977B;
         border-right-width: 3vw
       }
+
       .frame {
         width: 14vw;
         margin-top: 6vw;
         position: relative;
         right: .5vw
-        
       }
+
       .letterboard {
         width: 15vw;
         height: 15vw;
         margin-left: -.5vw;
         margin-top: 1.4vw;
       }
+
       .books {
         width: 15vw;
         height: 15vw;
         margin-top: .3vw
       }
+
       .wii {
         width: 15vw;
         height: 16vw;
         margin-top: 1.3vw;
       }
+
       .hula {
         width: 15vw;
         margin-top: -15vw;
         margin-left: 4vw
       }
-      .math{
+
+      .math {
         height: 15vw;
-          width:12vw;
-        margin-top:.5vw
+        width: 12vw;
+        margin-top: .5vw
       }
-      .bratz{
+
+      .bratz {
         height: 15vw;
         width: 10vw;
         margin-top: 1vw
       }
-      .fashion{
+
+      .fashion {
         height: 15vw;
-          width:15vw;
-        margin-top:.5vw
+        width: 15vw;
+        margin-top: .5vw
       }
-      .youtube{
-        height:15vw;
+
+      .youtube {
+        height: 15vw;
         width: 20vw;
         margin-left: -3vw;
         margin-top: 2.2vw
-        
       }
-      
-      
     </style>
   </head>
   <body>
@@ -205,7 +228,7 @@
         <img class="frame" src="pitch-perfect.png" alt="a frame of the Barden Bellas from the 2012 movie 'Pitch Perfect'">
       </div>
     </div>
-     <div class="shelf">
+    <div class="shelf">
       <div class="left-box">
         <img class="math" src="cool-math.png" alt="charcaters from games on coolmath.com">
       </div>
@@ -219,6 +242,6 @@
         <img class="youtube" src="youtube.png" alt="fake youtube plaque for the Biritsh vlog squad">
       </div>
     </div>
-<div class="floor"></div>
+    <div class="floor"></div>
   </body>
 </html>
