@@ -23,12 +23,13 @@
 
       .floor {
         background-image: url("carpet.jpg");
-        height: 25vh;
-        height: 105vh;
+        height: 100vh;
         width: 100vw;
         position: relative;
-        top: -14.5vh;
-        z-index: 0
+        top: -14vh;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
       }
 
       .chalkboard {
@@ -202,6 +203,15 @@
         margin-left: -3vw;
         margin-top: 2.2vw
       }
+      .rug{
+        height: 50vw;
+        width: 75vw;
+        z-index: 3;
+        position: relative;
+        top: 10vw;
+        max-width: 100%;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -264,6 +274,10 @@
           </a>
       </div>
     </div>
-    <div class="floor"></div>
+   
+    <div class="floor">
+    <img class="rug" src="class-rug.jpg" alt="class room rug with alphabet on it">
+    </div>
+     
   </body>
 </html>
